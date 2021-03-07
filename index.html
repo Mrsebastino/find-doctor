@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.2/sandstone/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Find A Doctor</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark text-white navbar-expand-lg pb-4">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">PHLO<br>Digital Pharmacy</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-info" aria-current="page" href="#home">Find a
+                                Doctor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="#">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="#">Care Plan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="#">Emergency</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container container-map">
+            <div id="map">Hello</div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCduP0166GDHO9eqygSbGxUOOOk8uRaS6M&callback=initMap&libraries=places"
+        async defer> </script>
+    <script src="server.js" charset="utf-8"></script>
+    <script src="js/map.js" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+body {
+  background-color: #515278;
+}
+
+/* NavBar  */
+
+.navbar-brand {
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4em;
+}
+
+.navbar .nav-link {
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4em;
+  text-transform: none;
+}
+
+.navbar {
+  background-color: #1c1c3b;
+}
+
+/* Map */
+
+#map {
+  text-align: center;
+  width: 100%;
+  min-height: 600px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.info-window {
+  height: auto;
+  width: auto;
+  font-family: Lato, sans-serif;
+}
+
+/* Booking Form */
+
+.booking-detail {
+  margin-left: 500px;
+  height: fit-content;
+  width: 100px;
+  background-color: #fff;
+}
+
+.form-control {
+  width: 50%;
+  margin-left: 150px;
+}
+
+.btn-book {
+  border-radius: 10px;
+  padding: 10px 0;
+  width: fit-content;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.confirmed-booking {
+  height: 200px;
+  width: 500px;
+  margin-left: 300px;
+  background-color: #fff;
+  color: #29abe0;
+  text-align: center;
+  font-family: lato, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+}
