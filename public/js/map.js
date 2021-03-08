@@ -94,10 +94,15 @@ function createMarker(place) {
     });
 
     google.maps.event.addListener(marker, 'click', function () {
-        let booking = `<div class="info-window"><h3>${place.name}</h3></div><p>
-    ${place.formatted_address}</p><div><button class="btn-book btn-primary m-auto" type="submit" name="action">Book Appointment</button></div></form>`
+        let booking = `<div id="booking"><div class="info-window"><h3>${place.name}</h3></div><p>
+    ${place.formatted_address}</p><div><button onclick="goToForm()" class="btn-book btn-primary m-auto">Book Appointment</button></div></div>`
         infowindow.setContent(booking);
         infowindow.open(map, this);
     });
+
     return marker;
+}
+
+function goToForm() {
+    let form = $("#bookingView").toggleClass("view-form");
 }
