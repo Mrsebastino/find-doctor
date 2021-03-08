@@ -46,9 +46,32 @@
         </nav>
     </header>
     <main>
-        <section class="container container-map">
+        <!--<section class="container container-map">
             <div id="map"></div>
-        </section>
+        </section>-->
+
+        <div class="container-fluid text-center mt-5">
+            <div class="row">
+                <div class="col-4 booking-detail">
+                    <form action="/booking_form" method="POST">
+                        <h3>Doctor's Name</h3>
+                        <p>Doctor's address</p>
+                        <div></div>
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" class="form-control" id="fullname" name="fullname"
+                            placeholder="Enter Full Name" required><br>
+                        <label for="email">Email Address:</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email"
+                            required><br>
+                        <label for="date">Date:</label>
+                        <input type="date" class="form-control" id="date" name="date" required><br>
+                        <label for="time">Time:</label>
+                        <input type="time" class="form-control" id="time" name="time" required><br>
+                        <button class="btn-book btn-primary" type="submit" name="submit">Book Appointment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
