@@ -54,6 +54,9 @@
         <div class="container-fluid mt-5 view-form" id="bookingView">
             <div class=" row">
                 <div class="col-4 booking-detail">
+                    <button type="button" onclick="closeForm()" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                     <form action="/booking_form" method="POST">
                         <div class="row">
                             <div class="col-3 mt-3 text-left booking-form-doctor-details">
@@ -80,14 +83,19 @@
             </div>
         </div>
     </main>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCduP0166GDHO9eqygSbGxUOOOk8uRaS6M&callback=initMap&libraries=places"
-        async defer> </script>
-    <script src="js/map.js" charset="utf-8"></script>
+    <--Close the form that overlap the map-->
+        <script>
+            function closeForm() {
+                $("#bookingView").toggleClass("view-form");
+            }
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCduP0166GDHO9eqygSbGxUOOOk8uRaS6M&callback=initMap&libraries=places"
+            async defer> </script>
+        <script src="js/map.js" charset="utf-8"></script>
 </body>
 
 </html>
