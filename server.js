@@ -11,9 +11,6 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html");
 });
 
-app.get("/booking_form", (req, res) => {
-    res.sendFile(__dirname, + "/booking_form.html");
-});
 
 app.post("/booking_form", (req, res) => {
     let fullname = req.body.fullname;
