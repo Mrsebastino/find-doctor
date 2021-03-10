@@ -106,3 +106,7 @@ function createMarker(place) {
 function goToForm() {
     $("#bookingView").toggleClass("view-form");
 }
+
+function closeForm() {
+    $("#bookingView").toggleClass("view-form");
+}
