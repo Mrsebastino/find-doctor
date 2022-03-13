@@ -27,7 +27,7 @@ function getLocation() {
                 lat: position.coords.latitude,
                 lng: position.coords.longitude
             };
-            // console.log("getLocation:" + pos.lat + "," + pos.lng);
+            console.log("getLocation:" + pos.lat + "," + pos.lng);
             let marker = new google.maps.Marker({
                 position: pos,
                 map: map,
@@ -92,6 +92,7 @@ function createMarker(place) {
         icon: "http://maps.google.com/mapfiles/ms/micons/red.png",
         animation: google.maps.Animation.DROP,
     });
+
 
     google.maps.event.addListener(marker, 'click', function () {
         let booking = `<div id="booking"><div class="info-window"><h3>${place.name}</h3></div><p>
